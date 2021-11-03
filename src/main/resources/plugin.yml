@@ -2,6 +2,6 @@ name: Skript Worlds
 version: '${project.version}'
 main: me.github.reportcardsmc.skriptworlds.SkriptWorlds
 api-version: 1.17
-depend: [ Skript ]
+depend: [ Skript, Multiverse-Core ]
 authors: [ ReportCards ]
 description: A Skript Addon to hook into multiverse
