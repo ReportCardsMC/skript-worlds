@@ -14,11 +14,13 @@ public final class SkriptWorlds extends JavaPlugin {
     public static MultiverseCore mvCore;
     public static SkriptWorlds instance;
     public static SkriptAddon addon;
+    public static InformationHolder info;
 
     @Override
     public void onEnable() {
         // Plugin startup logic
         instance = this;
+        info = new InformationHolder();
         if (Bukkit.getServer().getPluginManager().getPlugin("Multiverse-Core") == null) {
             getLogger().severe("Multiverse is not loaded.");
             return;
