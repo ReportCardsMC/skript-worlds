@@ -23,6 +23,10 @@ public class CloneWorldEff extends Effect {
     protected void execute(Event e) {
         if (worldExpression == null || nameExpression == null) return;
         World world = worldExpression.getSingle(e);
+        if (world == null) {
+            SkriptWorlds.info.lastCloneSuccess = false;
+            return;
+        }
         SkriptWorlds.info.lastCloneSuccess = SkriptWorlds.mvCore.getMVWorldManager().cloneWorld(world.getName(), nameExpression.getSingle(e));
     }
 
