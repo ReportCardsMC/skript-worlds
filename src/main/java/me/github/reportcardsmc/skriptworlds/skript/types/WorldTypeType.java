@@ -5,7 +5,6 @@ import ch.njol.skript.classes.EnumSerializer;
 import ch.njol.skript.classes.Parser;
 import ch.njol.skript.lang.ParseContext;
 import ch.njol.skript.registrations.Classes;
-import org.bukkit.World;
 import org.bukkit.WorldType;
 import org.jetbrains.annotations.Nullable;
 
