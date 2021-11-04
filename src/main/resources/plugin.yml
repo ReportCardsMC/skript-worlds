@@ -1,4 +1,4 @@
-name: Skript Worlds
+name: skript-worlds
 version: '${project.version}'
 main: me.github.reportcardsmc.skriptworlds.SkriptWorlds
 api-version: 1.17

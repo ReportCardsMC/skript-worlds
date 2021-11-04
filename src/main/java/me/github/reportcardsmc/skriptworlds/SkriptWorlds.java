@@ -18,6 +18,7 @@ public final class SkriptWorlds extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        getLogger().info("Starting");
         // Plugin startup logic
         instance = this;
         info = new InformationHolder();
