@@ -22,6 +22,10 @@ public class DeleteWorldEff extends Effect {
     protected void execute(Event e) {
         if (worldExpression == null) return;
         World world = worldExpression.getSingle(e);
+        if (world == null) {
+            SkriptWorlds.info.lastDeleteSuccess = false;
+            return;
+        }
         SkriptWorlds.info.lastDeleteSuccess = SkriptWorlds.mvCore.getMVWorldManager().deleteWorld(world.getName(), true, true);
     }
 

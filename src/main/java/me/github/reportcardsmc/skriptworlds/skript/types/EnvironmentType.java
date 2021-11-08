@@ -10,7 +10,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class EnvironmentType {
     static {
-        Classes.registerClass(new ClassInfo<>(World.Environment.class, "environment")
+        Classes.registerClass(new ClassInfo<>(World.Environment.class, "bukkit world environment")
                 .user("environments?")
                 .name("world environment")
                 .description("Represents a world environment")

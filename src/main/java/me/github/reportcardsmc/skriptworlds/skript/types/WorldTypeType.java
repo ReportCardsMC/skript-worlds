@@ -10,7 +10,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class WorldTypeType {
     static {
-        Classes.registerClass(new ClassInfo<>(WorldType.class, "worldtype")
+        Classes.registerClass(new ClassInfo<>(WorldType.class, "bukkit world type")
                 .user("world[ ]types?")
                 .name("world type")
                 .description("Represents a world type")
